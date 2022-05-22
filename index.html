@@ -9,35 +9,69 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
     <style>
+        html{
+            width: 100%;
+            height: 100%;
+            overflow: hidden !important;
+        }
         body{
             font-family: 'Montserrat', serif;
             font-size: 1.5rem;
+            width: 100%;
+            height: 100%;
         }
+
+        .egg-gradient{
+            background: linear-gradient(-45deg, #ff7878, #ff0000 );
+            background-size: 200% 200%;
+            -webkit-animation: Animation 5s ease infinite;
+            -moz-animation: Animation 5s ease infinite;
+            animation: Animation 5s ease infinite;
+        }
+        @-webkit-keyframes Animation {
+            0%{background-position:10% 0%}
+            50%{background-position:91% 100%}
+            100%{background-position:10% 0%}
+        }
+        @-moz-keyframes Animation {
+            0%{background-position:10% 0%}
+            50%{background-position:91% 100%}
+            100%{background-position:10% 0%}
+        }
+        @keyframes Animation {
+            0%{background-position:10% 0%}
+            50%{background-position:91% 100%}
+            100%{background-position:10% 0%}
+        }
+
+
     </style>
 </head>
 <body>
-<a href="index.html">
-    <div class="d-flex justify-content-center mt-2">
-        <img src="img/chequeredFlag.png" width="20%" height="20%">
-        <img src="img/F1.png" width="30%" height="20%">
-        <img src="img/chequeredFlag.png"  width="20%" height="20%">
-    </div>
-</a>
-<hr class="pt-2">
-<div class="pt-3 ps-4 d-flex justify-content-center">
-    <div class="d-block">
-        <p>Ricerca informazioni riguardo la stagione </p>
-        <form action="/ProgettoServerAPI/home" method="POST">
-            <label for="anno"></label><select style="width: 20vw; height: 4.483vh" name="anno" id="anno"></select>
-            <label for="tipologiaSelect"></label>
-            <select style="width: 20vw; height: 4.483vh" name="tipologiaSelect" id="tipologiaSelect">
-                <option value="races" name="tipologia">Lista Gran Premi</option>
-                <option value="constructors" name="tipologia">Lista Costruttori</option>
-                <option value="drivers" name="tipologia">Lista Piloti</option>
-            </select>
-            <input type="submit" name="invio">
-        </form>
-    </div>
+    <a href="index.html">
+        <div class="d-flex justify-content-center mt-2">
+            <img src="img/chequeredFlag.png" width="20%" height="20%">
+            <img src="img/F1.png" width="30%" height="20%">
+            <img src="img/chequeredFlag.png"  width="20%" height="20%">
+        </div>
+    </a>
+<div class="w-100 h-100 egg-gradient">
+    <hr class="pt-2">
+        <div class="pt-3 ps-4 d-flex justify-content-center">
+            <div class="d-block">
+                <p>Ricerca informazioni riguardo la stagione </p>
+                <form action="/ProgettoServerAPI/home" method="POST">
+                    <label for="anno"></label><select style="width: 20vw; height: 4.483vh" name="anno" id="anno"></select>
+                    <label for="tipologiaSelect"></label>
+                    <select style="width: 20vw; height: 4.483vh" name="tipologiaSelect" id="tipologiaSelect">
+                        <option value="races" name="tipologia">Lista Gran Premi</option>
+                        <option value="constructors" name="tipologia">Lista Costruttori</option>
+                        <option value="drivers" name="tipologia">Lista Piloti</option>
+                    </select>
+                    <input type="submit" name="invio">
+                </form>
+            </div>
+        </div>
 </div>
 </body>
 </html>
