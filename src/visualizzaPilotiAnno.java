@@ -29,6 +29,8 @@ public class visualizzaPilotiAnno {
             nazione = "India";
         }else if(nazionalità.equalsIgnoreCase("South African")) {
                 nazione = "South Africa";
+        }else if(nazionalità.equalsIgnoreCase("Rhodesian")) {
+            nazione = "United Kingdom";
         }else if(nazionalità.contains(" ") || m.find() && !nazionalità.equalsIgnoreCase("South African")) {
             String[] parts;
             parts = nazionalità.contains(" ") ? nazionalità.split(" ") : nazionalità.split("[^a-z0-9A-Z ]");

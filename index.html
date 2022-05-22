@@ -24,18 +24,20 @@
     </div>
 </a>
 <hr class="pt-2">
-<div class="pt-3 ps-4">
-    <p>Ricerca informazioni riguardo la stagione </p>
-    <form action="/ProgettoServerAPI/home" method="POST">
-        <label for="anno"></label><select style="width: 20vw; height: 4.483vh" name="anno" id="anno"></select>
-        <label for="tipologiaSelect"></label>
-        <select style="width: 20vw; height: 4.483vh" name="tipologiaSelect" id="tipologiaSelect">
-            <option value="races" name="tipologia">Lista Gran Premi</option>
-            <option value="constructors" name="tipologia">Lista Costruttori</option>
-            <option value="drivers" name="tipologia">Lista Piloti</option>
-        </select>
-        <input type="submit" name="invio">
-    </form>
+<div class="pt-3 ps-4 d-flex justify-content-center">
+    <div class="d-block">
+        <p>Ricerca informazioni riguardo la stagione </p>
+        <form action="/ProgettoServerAPI/home" method="POST">
+            <label for="anno"></label><select style="width: 20vw; height: 4.483vh" name="anno" id="anno"></select>
+            <label for="tipologiaSelect"></label>
+            <select style="width: 20vw; height: 4.483vh" name="tipologiaSelect" id="tipologiaSelect">
+                <option value="races" name="tipologia">Lista Gran Premi</option>
+                <option value="constructors" name="tipologia">Lista Costruttori</option>
+                <option value="drivers" name="tipologia">Lista Piloti</option>
+            </select>
+            <input type="submit" name="invio">
+        </form>
+    </div>
 </div>
 </body>
 </html>

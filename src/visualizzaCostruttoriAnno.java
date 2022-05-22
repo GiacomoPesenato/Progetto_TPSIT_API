@@ -27,6 +27,8 @@ public class visualizzaCostruttoriAnno {
             nazione = "India";
         }else if(nazionalitàSquadra.equalsIgnoreCase("South African")) {
             nazione = "South Africa";
+        }else if(nazionalitàSquadra.equalsIgnoreCase("Rhodesian")) {
+            nazione = "United Kingdom";
         }else if(nazionalitàSquadra.contains(" ") || m.find() && !nazionalitàSquadra.equalsIgnoreCase("South African")) {
             String[] parts;
             parts = nazionalitàSquadra.contains(" ") ? nazionalitàSquadra.split(" ") : nazionalitàSquadra.split("[^a-z0-9A-Z ]");
